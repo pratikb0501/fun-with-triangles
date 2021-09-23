@@ -75,7 +75,54 @@ header {
 #message {
   margin-bottom: 1.5em;
   font-size: 1.3rem;
+  padding: 0 0.7em;
   display: none;
+}
+
+.tg--heading {
+  font-size: 1.5rem;
+  margin: 1em auto;
+  font-weight: 500;
+}
+
+.tg--card {
+  width: 70%;
+  text-align: center;
+  margin: 1em auto;
+  padding: 1em;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+.tg--subcard + .tg--subcard {
+  margin-top: 1em;
+}
+.tg--p {
+  font-size: 1.2rem;
+  margin-bottom: 0.3em;
+}
+.tg--input {
+  width: min(60%, 20em);
+  height: 2rem;
+  padding-left: 0.5em;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+}
+
+#tg-btn {
+  margin-top: 1em;
+  font-size: 1rem;
+  padding: 0.5em;
+  width: max(18%, 6em);
+  border: 1px solid var(--primary-color);
+  border-radius: 102px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.formula {
+  margin: 1em auto;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* footer style */

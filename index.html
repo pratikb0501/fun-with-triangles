@@ -1,128 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Fun With Triangles</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <header class="header">
-            <div class = "header--logo">Fun With Triangles</div>
-            <div>
-                <ul>
-                    <li>Is Triangle?</li>
-                    <li>Quiz</li>
-                    <li>Hypothenuse</li>
-                    <li>Area Of Triangle</li>
-                </ul>
+      <header class="header">
+        <div class="header--logo">Fun With Triangles</div>
+        <div>
+          <ul>
+            <li>Is Triangle?</li>
+            <li>Quiz</li>
+            <li>Hypothenuse</li>
+            <li>Area Of Triangle</li>
+          </ul>
+        </div>
+      </header>
+      <div class="content">
+        <form action="" id="quiz-form">
+          <div class="question--card">
+            <p class="question-statement">
+              1. If a triangle has angles 135, 15, 30. Is it an obtuse triangle?
+            </p>
+            <div class="question--answer">
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question1"
+                  value="yes"
+                />Yes
+              </label>
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question1"
+                  value="No"
+                />No
+              </label>
             </div>
-        </header>
-        <div class="content">
-					<form action="" id = "quiz-form">
-						<div class = "question--card" >
-							<p class = "question-statement">
-								1. If a triangle has angles 135, 15, 30. Is it an obtuse triangle?
-							</p>
-							<div class = "question--answer">
-								<label class="question--label">
-									<input class="question--options"  type="radio" name="question1" value="yes" />Yes
-								</label>
-								<label class="question--label">
-									<input class="question--options" type="radio" name="question1" value="No" />No
-								</label>
-							</div>
-						</div>
-						<div class = "question--card" >
-							<p class = "question-statement">
-								2. What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?
-							</p>
-							<div class = "question--answer">
-								<label class="question--label">
-									<input class="question--options"  type="radio" name="question2" value="obtuse" />Obtuse
-								</label>
-								<label class="question--label">
-									<input class="question--options" type="radio" name="question2" value="acute" />Acute
-								</label>
-								<label class="question--label">
-									<input class="question--options" type="radio" name="question2" value="right" />Right
-								</label>
-							</div>
-						</div>
-						<div class = "question--card" >
-							<p class = "question-statement">
-								3. Which of the following triangles are always similar?
-							</p>
-							<div class = "question--answer">
-								<label class="question--label">
-									<input class="question--options"  type="radio" name="question3" value="equilateral" />Equilateral
-								</label>
-								<label class="question--label">
-									<input class="question--options" type="radio" name="question3" value="acute" />Isosceles
-								</label>
-								<label class="question--label">
-									<input class="question--options" type="radio" name="question3" value="obtuse" />Obtuse
-								</label>
-							</div>
-						</div>
-						<div class = "question--card" >
-							<p class = "question-statement">
-								4. The perimeter of an equilateral triangle is 15cm. What is the length of one side?
-							</p>
-							<div class = "question--answer">
-								<label class="question--label">
-									<input class="question--options"  type="radio" name="question4" value="15" />15
-								</label>
-								<label class="question--label">
-									<input class="question--options" type="radio" name="question4" value="45" />45
-								</label>
-								<label class="question--label">
-									<input class="question--options" type="radio" name="question4" value="5" />5
-								</label>
-							</div>
-						</div>
-						<div class = "question--card" >
-							<p class = "question-statement">
-								5. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?
-							</p>
-							<div class = "question--answer">
-								<label class="question--label">
-									<input class="question--options"  type="radio" name="question5" value="equilateral" />Equilateral
-								</label>
-								<label class="question--label">
-									<input class="question--options" type="radio" name="question5" value="isosceles" />Isosceles
-								</label>
-								<label class="question--label">
-									<input class="question--options" type="radio" name="question5" value="scalene" />Scalene
-								</label>
-							</div>
-						</div>
-						<input type="submit" id = "content-btn" value="Submit">
-						<!-- <button id = "content-btn">Submit</button> -->
-						<p id="message"></p>
-					</form>
-				</div>
+          </div>
+          <div class="question--card">
+            <p class="question-statement">
+              2. What is the third angle for the triangle where angle1 = 45° and
+              angle2 = 45°?
+            </p>
+            <div class="question--answer">
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question2"
+                  value="obtuse"
+                />Obtuse
+              </label>
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question2"
+                  value="acute"
+                />Acute
+              </label>
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question2"
+                  value="right"
+                />Right
+              </label>
+            </div>
+          </div>
+          <div class="question--card">
+            <p class="question-statement">
+              3. Which of the following triangles are always similar?
+            </p>
+            <div class="question--answer">
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question3"
+                  value="equilateral"
+                />Equilateral
+              </label>
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question3"
+                  value="acute"
+                />Isosceles
+              </label>
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question3"
+                  value="obtuse"
+                />Obtuse
+              </label>
+            </div>
+          </div>
+          <div class="question--card">
+            <p class="question-statement">
+              4. The perimeter of an equilateral triangle is 15cm. What is the
+              length of one side?
+            </p>
+            <div class="question--answer">
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question4"
+                  value="15"
+                />15
+              </label>
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question4"
+                  value="45"
+                />45
+              </label>
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question4"
+                  value="5"
+                />5
+              </label>
+            </div>
+          </div>
+          <div class="question--card">
+            <p class="question-statement">
+              5. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of
+              triangle?
+            </p>
+            <div class="question--answer">
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question5"
+                  value="equilateral"
+                />Equilateral
+              </label>
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question5"
+                  value="isosceles"
+                />Isosceles
+              </label>
+              <label class="question--label">
+                <input
+                  class="question--options"
+                  type="radio"
+                  name="question5"
+                  value="scalene"
+                />Scalene
+              </label>
+            </div>
+          </div>
+        </form>
+        <!-- <input type="submit" id = "content-btn" value="Submit"> -->
+        <button id="content-btn">Submit</button>
+        <p id="message"></p>
+      </div>
     </main>
     <footer>
-			<div class = "footer--heading">
-				<p>Connect with me on !</p>
-			</div>
-			<div class = "footer--container" >
-				<div class="row">
-					<a class="footer--logo" href="https://mobile.twitter.com/pratik_bagmare" target="blank">
-									<img title="pratik_bagmare" src="images/twitter.png" alt="twitter" >
-					</a>
-					<a class="footer--logo" href="https://www.linkedin.com/in/pratikbagmare" target="blank">
-									<img title="pratikbagmare" src="images/linkedin.png" alt="linkedin" >
-					</a>
-					<a class="footer--logo" href="https://www.github.com/pratikb0501" target="blank">
-									<img title="pratikb0501" src="images/github.png" alt="github" >
-					</a>
-				</div>
+      <div class="footer--heading">
+        <p>Connect with me on !</p>
+      </div>
+      <div class="footer--container">
+        <div class="row">
+          <a
+            class="footer--logo"
+            href="https://mobile.twitter.com/pratik_bagmare"
+            target="blank"
+          >
+            <img
+              title="pratik_bagmare"
+              src="images/twitter.png"
+              alt="twitter"
+            />
+          </a>
+          <a
+            class="footer--logo"
+            href="https://www.linkedin.com/in/pratikbagmare"
+            target="blank"
+          >
+            <img
+              title="pratikbagmare"
+              src="images/linkedin.png"
+              alt="linkedin"
+            />
+          </a>
+          <a
+            class="footer--logo"
+            href="https://www.github.com/pratikb0501"
+            target="blank"
+          >
+            <img title="pratikb0501" src="images/github.png" alt="github" />
+          </a>
         </div>
+      </div>
     </footer>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
