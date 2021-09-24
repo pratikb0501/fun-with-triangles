@@ -22,9 +22,28 @@ header {
   font-size: 1.5rem;
   padding: 1.2em 0;
 }
-.header ul {
+#header--nav {
   text-decoration: none;
   display: none;
+  font-size: 1.2rem;
+  z-index: 999;
+  padding: 2px;
+  position: relative;
+  transition: display 1s;
+}
+#header--nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 0;
+  top: 1.8rem;
+  padding-left: 1.2rem;
+}
+.header ul {
+  position: relative;
 }
 .header li {
   text-decoration: none;
@@ -33,6 +52,7 @@ header {
 
 .content {
   text-align: center;
+  z-index: 1;
 }
 
 .question--card {
@@ -153,4 +173,26 @@ img {
 
 .footer--logo {
   margin: 0.7rem 1.5rem;
+}
+
+@media screen and (min-width: 440px) {
+  #nav-toggle {
+    display: none;
+  }
+  #header--nav {
+    display: block;
+  }
+  .header {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .header li {
+    margin-left: 0.7rem;
+  }
 }

@@ -1,6 +1,20 @@
 const checkbtn = document.getElementById("tg-btn");
 const inpArray = document.querySelectorAll(".tg--input");
 const message = document.getElementById("message");
+const navToggle = document.getElementById('nav-toggle');
+const menu = document.getElementById("header--nav");
+let isToggle = false;
+
+navToggle.addEventListener("click", () => {
+    isToggle = !isToggle;
+    if (isToggle) {
+        menu.style.display = "block"
+        // navToggle.style.transform = "rotate(90deg)"
+    } else {
+        menu.style.display = "none"
+        // navToggle.style.transform = "rotate(180deg)"
+    }
+})
 
 const showMessage = (msg) => {
     message.innerText = msg;
