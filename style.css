@@ -21,8 +21,8 @@ header {
   text-align: center;
 }
 .header--logo {
-  font-size: 1.5rem;
-  padding: 1.2em 0;
+  font-size: 2rem;
+  padding: 1.2rem 0;
   font-family: "Style Script", cursive;
 }
 #header--nav {
