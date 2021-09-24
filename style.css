@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Style+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 header {
@@ -21,6 +23,7 @@ header {
 .header--logo {
   font-size: 1.5rem;
   padding: 1.2em 0;
+  font-family: "Style Script", cursive;
 }
 #header--nav {
   text-decoration: none;
@@ -178,6 +181,10 @@ img {
 @media screen and (min-width: 440px) {
   #nav-toggle {
     display: none;
+  }
+  .header--logo {
+    font-size: 2rem;
+    padding: 1.2rem 0;
   }
   #header--nav {
     display: block;
